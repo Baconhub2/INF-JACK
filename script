@@ -1,0 +1,43 @@
+local UIS = game.UserInputService
+
+        local Player = game.Players.LocalPlayer
+        
+        local Mouse = Player:GetMouse()
+        
+        
+        local Spamming = false
+        
+        UIS.InputBegan:Connect(function(input, x)
+            if x then return end
+            if input.KeyCode == Enum.KeyCode.Q then
+                Spamming = not Spamming
+            end
+        end)
+        
+        game:GetService("RunService").RenderStepped:Connect(function()
+            if Spamming then
+                if Mouse.Target.Parent.Name == "Wardrobe" then
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 0)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 1)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 2)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 3)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 4)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 5)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 6)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 7)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 8)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 9)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 10)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 11)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 12)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 13)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 14)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 15)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 16)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 17)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 18)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 19)
+                    fireproximityprompt(Mouse.Target.Parent.HidePrompt, 20)
+                end
+            end    
+        end)
